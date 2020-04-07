@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mediapeers/ansible-role-filebeat.svg?branch=master)](https://travis-ci.com/mediapeers/ansible-role-filebeat)
+[![Build Status](https://travis-ci.com/mediafellows/ansible-role-filebeat.svg?branch=master)](https://travis-ci.com/mediafellows/ansible-role-filebeat)
 
 # Ansible role to install & configure filebeat
 Ansible role that installs filebeat on Linux using the apt package elastic provides.
@@ -39,8 +39,8 @@ when rendering the configuration template.
 This role has no dependencies to other roles.
 
 ## Example Playbook
-Copy this role into the roles/mediapeers.filebeat dir in your Ansible project. Preferably add it as a submodule.
-You can also install it with `ansible-galaxy install mediapeers.filebeat`.
+Copy this role into the roles/mediafellows.filebeat dir in your Ansible project. Preferably add it as a submodule.
+You can also install it with `ansible-galaxy install mediafellows.filebeat`.
 Then use it like so:
 
 ```yaml
@@ -52,11 +52,11 @@ Then use it like so:
     - filebeat_logfiles:
       - /var/log/syslog
   roles:
-    - mediapeers.filebeat
+    - mediafellows.filebeat
 ```
 
 ## License
 BSD
 
 ## Author Information
-Stefan Horning <horning[-at-]mediapeers.com>
+Stefan Horning <stefan.horning@mediafellows.com>

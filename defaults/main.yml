@@ -1,5 +1,5 @@
 ---
-# defaults file for mediapeers.filebeat
+# defaults file for mediafellows.filebeat
 
 filebeat_major_version: 7.x
 

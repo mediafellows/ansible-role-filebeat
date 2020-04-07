@@ -1,5 +1,5 @@
 ---
-# handlers file for mediapeers.filebeat
+# handlers file for mediafellows.filebeat
 
 - name: restart filebeat
   service:

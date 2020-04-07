@@ -1,5 +1,5 @@
 ---
-# tasks file for mediapeers.filebeat
+# tasks file for mediafellows.filebeat
 
 - name: Add elastic apt repo key (for all elastic software)
   apt_key:
