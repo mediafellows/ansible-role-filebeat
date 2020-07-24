@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: filebeat
   author: Stefan Horning
   description: Role to install and configure filebeat
   company: Mediapeers GmbH
