@@ -39,8 +39,8 @@ jobs:
     - name: Setup serverspec (install gem)
       run: sudo gem install serverspec
 
-    - name: Run serverspec
-      run: rake spec
+    - name: Run serverspec (as root to see all files)
+      run: sudo rake spec
 
     - name: Ouput filebeat config for debugging
       run: sudo cat /etc/filebeat/filebeat.yml
