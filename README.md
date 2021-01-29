@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mediafellows/ansible-role-filebeat.svg?branch=master)](https://travis-ci.com/mediafellows/ansible-role-filebeat)
+[![Ansible-Test](https://github.com/mediafellows/ansible-role-filebeat/workflows/Ansible-Test/badge.svg)](https://github.com/mediafellows/ansible-role-filebeat/actions?query=workflow%3AAnsible-Test)
 
 # Ansible role to install & configure filebeat
 Ansible role that installs filebeat on Linux using the apt package elastic provides.
