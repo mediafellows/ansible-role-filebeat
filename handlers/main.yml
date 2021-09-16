@@ -2,11 +2,11 @@
 # handlers file for mediafellows.filebeat
 
 - name: restart filebeat
-  service:
+  ansible.builtin.service:
     name: filebeat
     state: restarted
 
 - name: clean registry
-  file:
+  ansible.builtin.file:
     path: /var/lib/filebeat/registry/filebeat/
     state: absent
