@@ -6,6 +6,11 @@
     url: "https://packages.elastic.co/GPG-KEY-elasticsearch"
     dest: "{{ filebeat_repo_apt_key_dest }}"
 
+- name: Ensure apt key dir exists
+  ansible.builtin.file:
+    path: "{{ filebeat_repo_apt_key_dest | dirname }}"
+    state: directory
+
 # Install filebeat as a logstash client (to deliver logs), just for demoing
 
 - name: Add filebeat (Elastic) apt repo
