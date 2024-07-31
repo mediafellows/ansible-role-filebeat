@@ -1,3 +1,4 @@
 ---
 
 filebeat_all_prospectors: "{{ filebeat_prospectors + filebeat_extra_prospectors }}"
+filebeat_repo_apt_key_dest: '/etc/apt/keyrings/packages-elastic.asc'

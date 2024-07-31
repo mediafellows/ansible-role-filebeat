@@ -1,16 +1,16 @@
 ---
 # tasks file for mediafellows.filebeat
 
-- name: Add elastic apt repo key (for all elastic software)
-  ansible.builtin.apt_key:
+- name: Install elastic apt repo key (for all elastic software)
+  ansible.builtin.get_url:
     url: "https://packages.elastic.co/GPG-KEY-elasticsearch"
-    state: present
+    dest: "{{ filebeat_repo_apt_key_dest }}"
 
 # Install filebeat as a logstash client (to deliver logs), just for demoing
 
 - name: Add filebeat (Elastic) apt repo
   ansible.builtin.apt_repository:
-    repo: "deb https://artifacts.elastic.co/packages/{{ filebeat_major_version }}/apt stable main"
+    repo: deb [signed-by={{ filebeat_repo_apt_key_dest }}] https://artifacts.elastic.co/packages/{{ filebeat_major_version }}/apt stable main
     update_cache: yes
     state: present
 
