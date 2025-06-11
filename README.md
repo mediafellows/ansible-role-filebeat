@@ -1,4 +1,4 @@
-[![Ansible-Test](https://github.com/mediafellows/ansible-role-filebeat/workflows/Ansible-Test/badge.svg)](https://github.com/mediafellows/ansible-role-filebeat/actions?query=workflow%3AAnsible-Test)
+[![Ansible-Test](https://github.com/mediafellows/ansible-role-filebeat/actions/workflows/ansible_test.yml/badge.svg)](https://github.com/mediafellows/ansible-role-filebeat/actions/workflows/ansible_test.yml)
 
 # Ansible role to install & configure filebeat
 Ansible role that installs filebeat on Linux using the apt package elastic provides.
