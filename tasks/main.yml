@@ -11,8 +11,6 @@
     url: "https://packages.elastic.co/GPG-KEY-elasticsearch"
     dest: "{{ filebeat_repo_apt_key_dest }}"
 
-# Install filebeat as a logstash client (to deliver logs), just for demoing
-
 - name: Add filebeat (Elastic) apt repo
   ansible.builtin.apt_repository:
     repo: deb [signed-by={{ filebeat_repo_apt_key_dest }}] https://artifacts.elastic.co/packages/{{ filebeat_major_version }}/apt stable main
